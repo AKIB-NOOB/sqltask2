@@ -1,0 +1,10 @@
+create table Employee_details(EmployeeID Serial primary key,
+"FirstName" VARCHAR (50) not null,
+"LastName" VARCHAR (50) not null, 
+Email VARCHAR (100) unique,
+PhoneNumber Bigint Unique,
+HireDate Date not null,
+Salary Decimal (10,2) check (Salary> 0),
+DepartmentID int not null,
+IsActive boolean not null default false, 
+JobTitle varchar (100) not null);
